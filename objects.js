@@ -1,42 +1,67 @@
 // Create an object called user that has name, age, password properties and assign them appropriate values.
 
-// Code Here
+var user = {
+    
+ name: "Russell",
+ age:29,
+ password: "yourmomma"
+
+    
+};// Code Here
 
 
 
 // Add an email and username, as well as a method called alertUser that alerts the users name, to your user object using dot notation.
 
-// Code Here
+user.email = "russell.bwright@yahoo.com" 
+user.username = "buckks" // Code Here
 
 
 
 // Now loop over your user object and alert each of the keys.
 
-// Code Here
+function loop(obj){
+    for (var key in obj){
+        alert([key]);
+    }
+}
+
+loop(user);// Code Here
 
 
 
 // Now loop over your user object and alert each of the values for each key.
 
-// Code Here
+function loop(obj){
+    for (var key in obj){
+        alert(obj[key]);
+    }
+}
+
+loop(user);// Code Here
 
 
 
 // Remove the username from your user object
 
-// Code Here
+delete user.username;// Code Here
 
 
 
 // Create an object called creditCard that has number, cvc, type, and limit properties and assign them appropriate values.
 
-// Code Here
+var creditCard = {
+    number: 4566720037221690,
+    cvc: 656,
+    type: "Mastercard",
+    Limit: 10000
+}// Code Here
 
 
 
 // Create a variable called alternating. Set it equal to the string bonusCategories.
 
-// Code Here
+var alternating = "bonusCategories"// Code Here
 
 
 
@@ -51,14 +76,26 @@
     
     */
 
-// Code Here
+creditCard[alternating] = [{Gas: "2%"}, {Cashback: "3%"}, {food: "4%"}]
+creditCard.bank = {name: "Mobile Oil", address: "S Main St"};// Code Here
 
 
 
 // Write a function that will take your creditCard object and user object as arguments and combine them into one object. /* HINT: You will need a for..in loop */
 
-// Code Here
+function add(obj1, obj2){
+var newObj = {};
+ for (var key in obj1){
+        newObj[key] = obj1[key];
+ }   
 
+ for (key in obj2){
+    newObj[key] = obj2[key];
+ }
+   return newObj;
+    
+}// Code Here
+add(user, creditCard);
 
 /*Below you are given an object. Write a function that will loop over the allies property, remove LittleFinger, and insert Dragon Lady.
     It will also change alive to 'More Than Ever'.
@@ -70,6 +107,19 @@ var obj = {
     alive: 'Sort of',
   };
 
-  // Code Here
+function looper(obj){
 
+
+for (i=0; i < obj.allies.length; i++){
+    if (obj.allies[i] === "LittlerFinger"){
+        obj.allies[i] = "Dragon Lady";
+    }
+}
+obj.alive = "More Than Ever";
+
+return obj;
+
+}  // Code Here
+
+looper(obj)
   
