@@ -16,28 +16,25 @@ const user = {
     },
 };
 
-// Access the name property on the user. Use dot notation.
+// Access the name property on the user and store it in a variable called username. Use dot notation.
 
 
 // Change the user's title to 'Student'. Use dot notation.
 
 
-// Access the title property on the user. Use bracket notation.
+// Access the title property on the user and store it in a variable called title. Use bracket notation.
 
 
-// Change the user's age to 50. Use bracket notation.
+// Change the user's age to 50 and store the updated age to a variable called age. Use bracket notation.
 
 
 // Loop over and log the key and value of each key/value pair in the user
 
 
-// Add a new student object to the students array on the user. Utilize the addStudent method to achieve this.
+// Add a new student object to the end of the students array on the user. Utilize the addStudent method to achieve this.
 
 
 // Change each student with a cohort of DM10 to DM13.
-
-
-// Remove the age property on the user.
 
 
 /* Add an 'attributes' property to the user. It should be an object
@@ -64,20 +61,21 @@ const user = {
 
 
 
-/* Using bracket notation, add a bonusCategories key to your creditCard object using 'alternating'.
-    Set it's value to an array of 3 items that are objects. 
-    Each object should have one key value pair. 
-    That key value pair should be the category as the key and the percent it's work for the bonus as the value.
-    (e.g. Department Stores, 5%) 
-    
-    Using dot notation add another key to your object called 'bank' with the value being an object with 2 keys,
-        the bank name, and the bank address.
-    
+/* Using bracket notation, add a bonusCategories key to your creditCard object
+    using the 'alternating' variable you just created.
+    Set it's value to an array of 3 items that are objects.
+    Each object should have one key value pair.
+    That key value pair should be the category as the key and the percent it's worth for the bonus as the value.
+    (e.g. Department Stores, 5%)
     */
 
 
 
-// Write a function that will take your creditCard object and user object as arguments and combine them into one object. /* HINT: You will need a for..in loop */
+// Write a function called merge that will take your creditCard object and the user object as arguments and combine them into one object. Return that object /* HINT: You will need a for..in loop */
+
+
+
+// Invoke merge and store the return value in a variable called userCC.
 
 
 
@@ -87,6 +85,9 @@ const user = {
 
 var obj = {
     user: 'Jon Snow',
-    allies: ['That guy into Brienne', 'Ser Davos', 'LittleFinger'],
+    allies: ['That guy into Brienne', 'Ser Davos', 'Little Finger'],
     alive: 'Sort of',
+    hunky: true
 };
+
+// Remove the hunky property from the object above
