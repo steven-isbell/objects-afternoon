@@ -76,7 +76,7 @@ const user = {
 
 
 /*Below you are given an object. Write a function that will loop over the allies property, remove LittleFinger, and insert Dragon Lady.
-    It will also change alive to 'More Than Ever'.
+    It will also change alive to equal 'More Than Ever'.
     Return the object. */
 
 var obj = {
