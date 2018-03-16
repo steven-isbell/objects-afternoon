@@ -12,7 +12,7 @@ const user = {
         { name: 'Chris', cohort: 'DM9' },
     ],
     addStudent(student) {
-        this.students.push(students);
+        this.students.push(student);
     },
 };
 
@@ -45,6 +45,7 @@ const user = {
 */
 
 
+
 // Change the hairColor property to brown. Use dot notation.
 
 
@@ -56,9 +57,7 @@ const user = {
 // Create an object called creditCard that has number, cvc, type, and limit properties and assign them appropriate values.
 
 
-
 // Create a variable called alternating. Set it equal to the string bonusCategories.
-
 
 
 /* Using bracket notation, add a bonusCategories key to your creditCard object
@@ -70,13 +69,10 @@ const user = {
     */
 
 
-
 // Write a function called merge that will take your creditCard object and the user object as arguments and combine them into one object. Return that object /* HINT: You will need a for..in loop */
 
 
-
 // Invoke merge and store the return value in a variable called userCC.
-
 
 
 /*Below you are given an object. Write a function that will loop over the allies property, remove LittleFinger, and insert Dragon Lady.
@@ -89,5 +85,8 @@ var obj = {
     alive: 'Sort of',
     hunky: true
 };
+
+// Invoke the function and store the return value in a variable called jonSnow
+
 
 // Remove the hunky property from the object above

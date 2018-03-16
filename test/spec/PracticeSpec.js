@@ -59,7 +59,7 @@ describe('practice.js', function () {
 			expect(user.attributes.hairColor.toLowerCase()).toEqual('brown')
 		})
 		it('should have a height of 77', function () {
-			expect(user.attributes.height.toEqual(77))
+			expect(user.attributes.height).toEqual(77)
 		})
 	})
 
@@ -131,6 +131,7 @@ describe('practice.js', function () {
 
 	describe('Jon Snow', function () {
 		it('should have allies with Little Finger Removed', function () {
+			console.log(obj.allies.includes('Little Finger'));
 			expect(obj.allies.includes('Little Finger')).toBeFalsy()
 		})
 		it('should have allies with Dragon Lady added', function () {
