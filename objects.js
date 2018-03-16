@@ -1,42 +1,66 @@
-// Create an object called user that has name, age, password properties and assign them appropriate values.
+// Use this object for all tests
+const user = {
+    name: 'Steven',
+    age: 25,
+    title: 'Lead Instructor',
+    students: [
+        { name: 'Larry', cohort: 'DM10' },
+        { name: 'Jin', cohort: 'DM10' },
+        { name: 'Mario', cohort: 'DM9' },
+        { name: 'Bryce', cohort: 'DM10' },
+        { name: 'Mackenzie', cohort: 'DM8' },
+        { name: 'Chris', cohort: 'DM9' },
+    ],
+    addStudent(student) {
+        this.students.push(students);
+    },
+};
 
-// Code Here
-
-
-
-// Add an email and username, as well as a method called alertUser that alerts the users name, to your user object using dot notation.
-
-// Code Here
-
-
-
-// Now loop over your user object and alert each of the keys.
-
-// Code Here
-
-
-
-// Now loop over your user object and alert each of the values for each key.
-
-// Code Here
+// Access the name property on the user. Use dot notation.
 
 
+// Change the user's title to 'Student'. Use dot notation.
 
-// Remove the username from your user object
 
-// Code Here
+// Access the title property on the user. Use bracket notation.
+
+
+// Change the user's age to 50. Use bracket notation.
+
+
+// Loop over and log the key and value of each key/value pair in the user
+
+
+// Add a new student object to the students array on the user. Utilize the addStudent method to achieve this.
+
+
+// Change each student with a cohort of DM10 to DM13.
+
+
+// Remove the age property on the user.
+
+
+/* Add an 'attributes' property to the user. It should be an object
+    with the following properties:
+    hairColor: 'blonde',
+    eyeColor: 'hazel',
+    height: 72
+*/
+
+
+// Change the hairColor property to brown. Use dot notation.
+
+
+
+// Change the height to 77. Use bracket notation.
 
 
 
 // Create an object called creditCard that has number, cvc, type, and limit properties and assign them appropriate values.
 
-// Code Here
-
 
 
 // Create a variable called alternating. Set it equal to the string bonusCategories.
-
-// Code Here
 
 
 
@@ -51,13 +75,10 @@
     
     */
 
-// Code Here
-
 
 
 // Write a function that will take your creditCard object and user object as arguments and combine them into one object. /* HINT: You will need a for..in loop */
 
-// Code Here
 
 
 /*Below you are given an object. Write a function that will loop over the allies property, remove LittleFinger, and insert Dragon Lady.
@@ -68,8 +89,4 @@ var obj = {
     user: 'Jon Snow',
     allies: ['That guy into Brienne', 'Ser Davos', 'LittleFinger'],
     alive: 'Sort of',
-  };
-
-  // Code Here
-
-  
+};
