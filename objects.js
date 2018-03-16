@@ -24,8 +24,9 @@ const username = user.name;
 
 user.title = 'Student'
 
-// Access the title property on the user and store it in a variable called title. Use bracket notation.
+// Access the updated title property on the user and store it in a variable called title. Use bracket notation.
 
+const title = user.title;
 
 // Change the user's age to 50 and store the updated age to a variable called age. Use bracket notation.
 
