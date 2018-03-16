@@ -103,7 +103,7 @@ describe('practice.js', function () {
 		})
 		it('each object should have one key value pair', function () {
 			let flag = true;
-			if (Object.keys(creditCard.bonusCategories).length > 1) flag = false;
+			if (Object.keys(creditCard.bonusCategories).length !== 3) flag = false;
 			expect(flag).toBeTruthy();
 		})
 	})
@@ -131,7 +131,7 @@ describe('practice.js', function () {
 
 	describe('Jon Snow', function () {
 		it('should have allies with Little Finger Removed', function () {
-			console.log(obj.allies.includes('Little Finger'));
+
 			expect(obj.allies.includes('Little Finger')).toBeFalsy()
 		})
 		it('should have allies with Dragon Lady added', function () {
