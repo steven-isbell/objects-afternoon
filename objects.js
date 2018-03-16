@@ -18,9 +18,11 @@ const user = {
 
 // Access the name property on the user and store it in a variable called username. Use dot notation.
 
+const username = user.name;
 
 // Change the user's title to 'Student'. Use dot notation.
 
+user.title = 'Student'
 
 // Access the title property on the user and store it in a variable called title. Use bracket notation.
 

@@ -9,10 +9,7 @@ describe('practice.js', function () {
 		})
 	})
 	describe('Title', function () {
-		it('should exist', function () {
-			expect(title).toBeDefined()
-		})
-		it('should equal users title', function () {
+		it('should equal Student', function () {
 			expect(user.title).toEqual('Student');
 		})
 	})
